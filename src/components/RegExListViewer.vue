@@ -8,7 +8,7 @@
       :multiple="multiple"
       :focusable="focusable"
     >
-      <v-expansion-panel v-for="item in items" :key="item">
+      <v-expansion-panel v-for="(item, idx) in items" :key="idx">
         <v-expansion-panel-header>{{ item.header }}</v-expansion-panel-header>
         <v-expansion-panel-content>{{ item.value }}</v-expansion-panel-content>
       </v-expansion-panel>
